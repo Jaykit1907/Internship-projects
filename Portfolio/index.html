@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
 </head>
 <body>
      
@@ -15,6 +18,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="skills.html">Skills</a></li>
+                    <li><a href="project.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -26,14 +30,33 @@
                 <div class="container1">
                         <h2>Hellow, It's me</h2>
                         <h1>Jaykit Maurya</h1>
-                        <h2>And I'm Fontend Developer</h2>
+                        <h2>
+                            <span id="element"></span>
+                        </h2>
                         <p>I'm a web Designer with extensive experience for over 1 years.expertise is to create ad website design,Frontend design, and many more....</p>
-                        <button class="moreaobutme">More about me</button>
+                        <button class="moreaboutme">More about me</button>
+                        <div class="icon1">
+                        <i class="fa-brands fa-instagram icons2"></i>
+                        <i class="fa-brands fa-facebook icons2"></i>
+                        <i class="fa-brands fa-github icons2"></i>
+                        <i class="fa-brands fa-linkedin icons2"></i>
+                        </div>
                 </div>
-                <div>
-
+                <div class="photo">
+                        <img src="photo3.jpg">
                 </div>
             </div>
         </section>
 </body>
-</html>
+
+
+<script>
+    var typed = new Typed('#element', {
+        strings: ['<i>And I\'m Frontend Developer</i>'],
+        typeSpeed: 100,
+        typeReverse: 100,
+        loop:true,
+      });
+</script>
+
+</html> 
