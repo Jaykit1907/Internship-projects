@@ -15,12 +15,13 @@
     }
 
 
-    let amazon1=document.getElementById("amazon");
+    let netflix1=document.getElementById("netflix");
 
-    amazon1.addEventListener("click",amazonwork);
+    netflix1.addEventListener("click",netflixwork);
 
-    function amazonwork(){
-        window.open("videos/Netflix website clone.mkv");
+    function netflixwork(){
+        console.log("clicked");
+        window.open("Netflix.html","video1","width=800 height=700 left=300 top=20 right=30");
     }
 
   
