@@ -24,4 +24,32 @@
         window.open("Netflix.html","video1","width=800 height=700 left=300 top=20 right=30");
     }
 
+    let amazon1=document.getElementById("amazon");
+
+    amazon1.addEventListener("click",amazonwork);
+    function amazonwork(){
+        console.log("clicked");
+        window.open("Amazon.html","video1","width=800 height=700 left=300 top=20 right=30");
+
+    }
+
+    let pdfconverter1=document.getElementById("pdfconverter");
+
+    pdfconverter1.addEventListener("click",pdfconverterwork);
+    function pdfconverterwork(){
+        console.log("clicked");
+        window.open("pdfconverter.html","video1","width=800 height=700 left=300 top=20 right=30");
+
+    }
+
+    
+    let translator1=document.getElementById("translator");
+
+    translator1.addEventListener("click",translatorwork);
+    function translatorwork(){
+        console.log("clicked");
+        window.open("Translator.html","video1","width=800 height=700 left=300 top=20 right=30");
+
+    }
+
   
