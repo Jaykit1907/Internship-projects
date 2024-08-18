@@ -12,11 +12,18 @@
 <body>
      
         <div class="navbar">
-            <div class="logo"><p>Portfolio</p></div>
+            <div class="logo"><p>Portfolio</p>
+               
+            </div>
+
             <div class="nav2">
-                <ul>
+                <div class="menu2">
+                <i class="fa-solid fa-bars" class="menuico"></i>
+                </div>
+                <ul class="ulelement">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
+
                     <li><a href="skills.html">Skills</a></li>
                     <li><a href="project.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -58,6 +65,16 @@
         typeReverse: 100,
         loop:true,
       });
+
+      let menu2=document.querySelector(".menuico");
+      let nav3=document.querySelector(".ulelement");
+
+      menu2.addEventListener("click",menuwork);
+      function menuwork(){
+        console.log("working");
+        nav3.setAttribute("style","display:flex;");
+        
+      }
 </script>
 
 </html> 
