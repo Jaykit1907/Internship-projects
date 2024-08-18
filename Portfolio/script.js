@@ -14,4 +14,13 @@
         elm.innerHTML="";
     }
 
+
+    let amazon1=document.getElementById("amazon");
+
+    amazon1.addEventListener("click",amazonwork);
+
+    function amazonwork(){
+        window.open("videos/Netflix website clone.mkv");
+    }
+
   
