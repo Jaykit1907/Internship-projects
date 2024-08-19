@@ -131,6 +131,45 @@
             </div>
         </section>
 
+
+        
+    
+    <section id="homecertificate">
+        <div class="skill-heading">
+        <h1 class="skill-heading">Certificates</h1>
+        </div>
+        <div class="certificate_container">
+
+            <div class="certificate-images-container">
+                <div class="skill-images">
+                    <img src="images/python.jpg" alt="html">
+                  
+                </div>
+
+                <div class="skill-images">
+                    <img src="images/microsoft ai.jpg" alt="css">
+                   
+                </div>
+
+                <div class="skill-images">
+                    <img src="images/java programme.jpg" alt="javascript">
+
+                </div>
+
+                <div class="skill-images">
+                    <img src="images/javascript project.jpg" alt="reactjs">
+
+                </div>
+            </div>
+          
+            
+        </div>
+
+
+
+    </section>
+
+
         
     <section id="homeproject">
         <div class="skill-heading">
@@ -209,12 +248,14 @@
       let skillbtn1=document.getElementById("skillbtn");
       let homeskill1=document.getElementById("homeskill");
       let homeproject1=document.getElementById("homeproject");
-      let homecertificate1=document.getElementById("certificatebtn");
+    
+      let homecertificate1=document.getElementById("homecertificate");
 
       projectbtn1.addEventListener("click",()=>{
         console.log("project");
         homeproject1.setAttribute("style","display:block");
         homeskill1.setAttribute("style","display:none");
+        homecertificate1.setAttribute("style","display:none");
 
 
       })
@@ -223,13 +264,15 @@
         homeskill1.setAttribute("style","display:block;");
         console.log("skill");
         homeproject1.setAttribute("style","display:none;")
+        homecertificate1.setAttribute("style","display:none");
 
       });
 
       certificatebtn1.addEventListener("click",()=>{
-        alert("This page is remaining");
+        
         homeproject1.setAttribute("style","display:none");
         homeskill1.setAttribute("style","display:none");
+        homecertificate1.setAttribute("style","display:block");
 
       });
 

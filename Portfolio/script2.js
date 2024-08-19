@@ -19,18 +19,19 @@ function amazonwork(){
 }
 
 let pdfconverter1=document.getElementById("pdfconverter");
-let convertercose;
+let converterclose;
 pdfconverter1.addEventListener("click",pdfconverterwork);
 function pdfconverterwork(){
     console.log("clicked");
-    convertercose=window.open("pdfconverter.html","video1","width=700 height=400 left=300 top=20 right=30");
+    converterclose=window.open("pdfconverter.html","video1","width=700 height=400 left=300 top=20 right=30");
 
 }
 
-let closepdfconverter1=document.getElementById("closepdfconverter");
+let closepdfconverter1=document.querySelectorAll(".closepdfconverter");
 
 closepdfconverter1.addEventListener("click",()=>{
-    convertercose.close();
+    console.log("close");
+    converterclose.close();
 })
 
 
