@@ -465,12 +465,12 @@ input[type]{
 
     .menu2{
         display:block;
-        
+        margin-right:-10px;
         height:60px;
     }
     .menuico{
         padding-right:30px;
-        font-size:50px;
+        font-size:28px;
         color:white
         
     }
@@ -640,6 +640,9 @@ input[type]{
     }
     .container1 h2{
         font-size:24px;
+    }
+    .logo p{
+    margin-left:-5px;
     }
     
     

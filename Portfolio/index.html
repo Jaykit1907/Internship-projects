@@ -18,7 +18,7 @@
 
             <div class="nav2">
                 <div class="menu2">
-                <i class="fa-solid fa-bars" class="menuico"></i>
+                <i class="fa-solid fa-bars menuico"></i>
                 </div>
                 <ul class="ulelement">
                     <li><a href="index.html">Home</a></li>
@@ -208,6 +208,7 @@
       let skillbtn1=document.getElementById("skillbtn");
       let homeskill1=document.getElementById("homeskill");
       let homeproject1=document.getElementById("homeproject");
+      let homecertificate1=document.getElementById("certificatebtn");
 
       projectbtn1.addEventListener("click",()=>{
         console.log("project");
@@ -222,7 +223,15 @@
         console.log("skill");
         homeproject1.setAttribute("style","display:none;")
 
-      })
+      });
+
+      certificatebtn1.addEventListener("click",()=>{
+        alert("This page is remaining");
+        homeproject1.setAttribute("style","display:none");
+        homeskill1.setAttribute("style","display:none");
+
+      });
+
 </script>
 
 </html> 
