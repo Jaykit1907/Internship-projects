@@ -55,26 +55,174 @@
                 </div>
             </div>
         </section>
+
+        <div  id="btncontainer">
+                <ul>
+                    <li id="projectbtn">Projects</li>
+                    <li id="certificatebtn">Certificates</li>
+                    <li id="skillbtn">Skills</li>
+                </ul>
+        </div>
+
+
+        <section  id="homeskill">
+            <div class="skill-heading">
+            <h1 class="skill-heading">My Skills</h1>
+            </div>
+            <div class="skill_container">
+                <h1>frontend</h1>
+                <div class="skill-images-container">
+                    <div class="skill-images">
+                        <img src="images/html.png" alt="html">
+                        <h1>html</h1>
+                        <p></p>
+                        <h3>90%</h3>
+                    </div>
+    
+                    <div class="skill-images">
+                        <img src="images/css.png" alt="css">
+                        <h1>css</h1>
+                        <p></p>
+                        <h3>80%</h3>
+                    </div>
+    
+                    <div class="skill-images">
+                        <img src="images/javascript.png" alt="javascript">
+                        <h1>javascript</h1>
+                        <p></p>
+                        <h3>70%</h3>
+                    </div>
+    
+                    <div class="skill-images">
+                        <img src="images/reactjs.png" alt="reactjs">
+                        <h1>reactjs</h1>
+                        <p></p>
+                        <h3>70%</h3>
+                    </div>
+                </div>
+              
+                
+            </div>
+    
+    
+    
+            <div class="skill_container">
+                <h1>Backend</h1>
+                <div class="skill-images-container">
+                    <div class="skill-images">
+                        <img src="images/django.png" alt="django">
+                        <h1>django</h1>
+                        <p></p>
+                        <h3>80%</h3>
+                    </div>s
+    
+                    <div class="skill-images">
+                        <img src="images/mysql.png" alt="mysql">
+                        <h1>mysql</h1>
+                        <p></p>
+                        <h3>80%</h3>
+                    </div>
+    
+                   
+                </div>
+              
+                
+            </div>
+        </section>
+
+        
+    <section id="homeproject">
+        <div class="skill-heading">
+            <h1 class="skill-heading">Projects</h1>
+            </div>
+        
+        <div class="project-container">
+            <div class="project-container1 project-image">
+                <img src="images/amazon.jpg">
+                <div class="project-info">
+                <h1>Amazon website clone</h1>
+                <p>An Amazon clone website clone refers to a secondary replication of an Amazon-like e-commerce platform. This second-tier cloning involves duplicating an existing Amazon clone, further mimicking its structure, features, and functionality. The main goal is to offer the same extensive shopping experience that includes a wide range of products, user-friendly interface, and seamless transaction process.</p>
+                <button class="moreaboutme" id="amazon">See video</button>
+            </div>
+            </div>
+
+           
+
+            <div class="project-container1 project-image">
+                <img src="images/netflix.jpg">
+                <div class="project-info">
+                <h1>Netflix website clone</h1>
+                <p>A Netflix website clone made using HTML and CSS focuses on replicating the visual design and basic user interface of the popular streaming platform. This type of clone is typically used for educational purposes, showcasing proficiency in front-end web development.</p>
+                <button class="moreaboutme" id="netflix">See video</button>
+            </div>
+            </div>
+
+            <div class="project-container1 project-image">
+                <img src="images/pdfconverter.jpg">
+                <div class="project-info">
+                <h1>Pdf converter</h1>
+                <p>Our website offers a seamless PDF management solution, allowing users to effortlessly convert PDFs to DOCX, merge multiple PDFs, and secure documents with password protection. Built with HTML, CSS, and JavaScript for a smooth user interface, it’s powered by Flask on the backend for efficient processing. MySQL is integrated to manage user data and document history securely. Whether you're editing, combining, or protecting your files, our platform provides a fast and user-friendly experience.</p>
+                <button class="moreaboutme" id="pdfconverter">See video</button>
+            </div>
+            </div>
+
+
+            <div class="project-container1 project-image">
+                <img src="images/Translator.png">
+                <div class="project-info">
+                <h1>Multiple language translator</h1>
+                <p>Our website offers a powerful multi-language translation tool, enabling users to convert text into multiple selected languages simultaneously. Developed with HTML, CSS, and JavaScript for an intuitive interface, the platform is powered by Django on the backend to handle robust processing. MySQL is utilized to securely store translation data and user preferences. Experience quick and accurate translations across various languages with our easy-to-use and efficient platform.</p>
+                <button class="moreaboutme" id="translator">See video</button>
+            </div>
+            </div>
+
+           
+        </div>
+    </section>
+
 </body>
 
 
 <script>
     var typed = new Typed('#element', {
-        strings: ['<i>Frontend Developer</i>'],
+        strings: ['<i>Full Stack Developer</i>'],
         typeSpeed: 100,
         typeReverse: 100,
         loop:true,
       });
 
+
       let menu2=document.querySelector(".menuico");
       let nav3=document.querySelector(".ulelement");
-
+/*
       menu2.addEventListener("click",menuwork);
       function menuwork(){
         console.log("working");
         nav3.setAttribute("style","display:flex;");
         
       }
+        */
+
+      let projectbtn1=document.getElementById("projectbtn");
+      let certificatebtn1=document.getElementById("certificatebtn");
+      let skillbtn1=document.getElementById("skillbtn");
+      let homeskill1=document.getElementById("homeskill");
+      let homeproject1=document.getElementById("homeproject");
+
+      projectbtn1.addEventListener("click",()=>{
+        console.log("project");
+        homeproject1.setAttribute("style","display:block");
+        homeskill1.setAttribute("style","display:none");
+
+
+      })
+
+      skillbtn1.addEventListener("click",()=>{
+        homeskill1.setAttribute("style","display:block;");
+        console.log("skill");
+        homeproject1.setAttribute("style","display:none;")
+
+      })
 </script>
 
 </html> 

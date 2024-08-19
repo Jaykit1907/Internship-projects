@@ -2,7 +2,7 @@
     padding:0;
     margin:0;
     box-sizing: border-box;
-    
+    border:1px solid red;
 
     
 
@@ -424,6 +424,17 @@ input[type]{
     
 }
 
+#btncontainer{
+    display: none;
+}
+#homeskill{
+    display:none;
+}
+#homeproject{
+    display:none;
+}
+
+
 
 
 
@@ -446,19 +457,20 @@ input[type]{
         align-items: center;
         justify-content:space-between;
         position:fixed;
-        width:100%;
+
+        
         z-index:5;
     }
 
 
     .menu2{
         display:block;
-        width:60px;
+        
         height:60px;
     }
     .menuico{
         padding-right:30px;
-        font-size:45px;
+        font-size:50px;
         color:white
         
     }
@@ -469,6 +481,9 @@ input[type]{
     .container1{
     
         width:100%;
+        margin-left:0px;
+        margin-top:50px;
+        padding:10px;
         
         
 
@@ -486,7 +501,13 @@ input[type]{
         height:auto;
     }
     .skill-images-container{
-        flex-direction: row;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:space-evenly;
+        padding:5px;
+    }
+    .skill-images h1{
+        font-size:17px;
     }
     .skill-images{
         height:auto;
@@ -536,6 +557,88 @@ input[type]{
         font-size:17px;
         font-weight: 700;
     }
+
+    .skill-images img{
+        height:60px;
+        width:80px;
+
+    }
+    .skill-images{
+        width:80px;
+    }
+
+    .container3 h1{
+        font-size:30px;
+    }
+    .container3{
+        padding:5px;
+    }
+
+    .project-image{
+        align-items: center;
+        justify-content: center;
+    }
+    #btncontainer{
+        width:100%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin-top:10px;
+
+        
+
+
+    }
+    #btncontainer ul{
+        display:flex;
+        justify-content:space-around;
+        align-items: center;
+        border-radius:30px;
+        width:90%;
+        height:auto;
+        background-color: aqua;
+        height:35px;
+        overflow: hidden;
+        box-shadow: 0px 0px 20px aqua;
+    
+    }
+    #btncontainer ul li{
+        list-style-type:none;
+        font-size:16px;
+        font-weight: 600;
+        width:100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        border:blueviolet;
+        height:100%;
+        color:rgb(26, 6, 6);
+        border:1px solid gray;
+    }
+    #btncontainer ul li:hover{
+        background-color: brown;
+        color:rgb(26, 6, 6);
+        
+    }
+    #btncontainer{
+       
+        cursor:pointer;
+        border: none;
+        font-size:13px;
+        font-weight:700;
+        margin:30px 30px 7px 0px;
+
+       
+        
+    }
+    .icon1{
+        justify-content: center;
+        
+    }
+    .photo{
+        display:none;
+    }
+    
     
 
 }
