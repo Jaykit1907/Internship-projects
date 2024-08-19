@@ -438,7 +438,7 @@ input[type]{
 
 
 
-@media (max-width:360px){
+@media (max-width:400px){
 
 .nav2 ul{
         display:none;
@@ -616,8 +616,8 @@ input[type]{
         border:1px solid gray;
     }
     #btncontainer ul li:hover{
-        background-color: brown;
-        color:rgb(26, 6, 6);
+        background-color:powderblue;
+        transform:scaleY(1.1);
         
     }
     #btncontainer{
