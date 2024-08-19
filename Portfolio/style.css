@@ -2,7 +2,7 @@
     padding:0;
     margin:0;
     box-sizing: border-box;
-    border:1px solid red;
+
 
     
 
@@ -637,6 +637,9 @@ input[type]{
     }
     .photo{
         display:none;
+    }
+    .container1 h2{
+        font-size:24px;
     }
     
     
