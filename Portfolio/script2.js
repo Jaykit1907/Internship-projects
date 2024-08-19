@@ -27,12 +27,6 @@ function pdfconverterwork(){
 
 }
 
-let closepdfconverter1=document.querySelectorAll(".closepdfconverter");
-
-closepdfconverter1.addEventListener("click",()=>{
-    console.log("close");
-    converterclose.close();
-})
 
 
 let translator1=document.getElementById("translator");
@@ -43,6 +37,5 @@ function translatorwork(){
     window.open("Translator.html","video1","width=700 height=400 left=300 top=20 right=30");
 
 }
-
 
 
