@@ -523,7 +523,7 @@ input[type]{
 
     }
     #element{
-        font-size:20px;
+        font-size:19px;
         width:100%;
     }
 
@@ -673,7 +673,7 @@ input[type]{
         display:none;
     }
     .container1 h2{
-        font-size:24px;
+        font-size:22px;
     }
     .logo p{
     margin-left:-5px;
@@ -949,5 +949,21 @@ margin-left:-5px;
         padding:20px;
 
     }
+    
+}
+
+@media (max-width:370px){
+    .skill-images-container{
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:space-evenly;
+        padding:2px;
+    }
+
+        .skill-images {
+            width: 92px;
+            height: auto;
+            padding: 2px;
+        }
     
 }
