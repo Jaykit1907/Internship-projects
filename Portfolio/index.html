@@ -19,15 +19,17 @@
 
             <div class="nav2">
                 <div class="menu2">
-                <i class="fa-solid fa-bars menuico"></i>
+                <i class="fa-solid fa-bars menuico" id="menuop"></i>
+                <i class="fa-solid fa-xmark menuico" id="cross"></i>
                 </div>
                 <ul class="ulelement">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
 
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="project.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li class="liele"><a href="index.html">Home</a></li>
+                    <li class="liele"><a href="about.html">About</a></li>
+
+                    <li class="liele"><a href="skills.html">Skills</a></li>
+                    <li class="liele"><a href="project.html">Projects</a></li>
+                    <li class="liele"><a href="contact.html">Contact</a></li>
                     
                 </ul>
             </div>
@@ -234,16 +236,28 @@
       });
 
 
-      let menu2=document.querySelector(".menuico");
+      let menu2=document.querySelector("#menuop");
       let nav3=document.querySelector(".ulelement");
-/*
+      let cross1=document.querySelector("#cross");
+      let liele1=document.querySelectorAll(".liele");
+
       menu2.addEventListener("click",menuwork);
       function menuwork(){
         console.log("working");
-        nav3.setAttribute("style","display:flex;");
+        menu2.setAttribute("style","display:none;");
+        cross1.setAttribute("style","display:block");
+        nav3.setAttribute("style","display:flex; flex-direction:column;position:fixed;top:100px;");
+
         
       }
-        */
+      cross1.addEventListener("click",()=>{
+        menu2.setAttribute("style","display:block");
+        cross1.setAttribute("style","display:none");
+        nav3.setAttribute("style","display:none;");
+        liele1.setAttribute("style","height:30px;background-color:white;");
+      }
+      );
+        
 
       let projectbtn1=document.getElementById("projectbtn");
       let certificatebtn1=document.getElementById("certificatebtn");
@@ -278,13 +292,14 @@
 
       });
 
-      let menuico1=document.querySelector(".menuico");
+    /* let menuico1=document.querySelector(".menuico");
       menuico1.addEventListener("click",()=>{
         alert("This button is pending to developer...");
-      })
+      }) */
 
 </script>
 <script src="script2.js"></script>
+<script src="script3.js"></script>
 
 
 </html> 
