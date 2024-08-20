@@ -26,6 +26,7 @@
     justify-content: center;
     height:60px;
     margin-right:80px;
+    
 
 }
 .nav2 ul li a{
@@ -42,6 +43,7 @@
     height:100%;
     margin-left:40px;
     border:2px solid rgb(15, 15, 41);
+
     
     
 }
@@ -475,6 +477,24 @@ input[type]{
 
 
 @media (max-width:450px){
+
+    .nav2 ul li{
+        
+    background-color: rgb(15, 15, 41,0.8);
+    padding:2px;
+    border-bottom:1px solid rgb(137, 212, 212);
+
+        
+    }
+    .nav2 ul li:hover{
+        border-bottom: 2px solid rgb(137, 212, 212);
+        padding:5px;
+
+    }
+    .nav2 ul li a{
+    
+        font-weight: 500;
+    }
 
 .nav2 ul{
         display:none;
