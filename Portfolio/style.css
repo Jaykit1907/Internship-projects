@@ -993,6 +993,11 @@ margin-left:-5px;
             font-size:17px;
             width:100%;
         }
+
+        .container1 h2{
+            padding:0px;
+            font-size:20px;
+        }
     
     
 }
