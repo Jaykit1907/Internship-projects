@@ -224,6 +224,28 @@
         </div>
     </section>
 
+
+
+    <section id="homecontact">
+        <div class="contact-container">
+            <h1>Contact Us</h1>
+            <div class="form-container">
+                <form>
+                    <div class="form1">
+                    <input type="text" placeholder="First name" class="text1">
+                    <input type="text" placeholder="Last name" class="text1">
+                    </div>
+                    <div class="form1">
+                    <input type="email" placeholder="email add" class="text1">
+                    <input type="number" placeholder="phone number" class="text1">
+                    </div>
+                    <textarea placeholder="message" id="msg"></textarea>
+                    <button class="moreaboutme">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 
@@ -269,6 +291,9 @@
 
       projectbtn1.addEventListener("click",()=>{
         console.log("project");
+        skillbtn1.setAttribute("style","background-color:aqua;");
+        projectbtn1.setAttribute("style","background-color:powderblue;");
+        certificatebtn1.setAttribute("style","background-color:aqua");
         homeproject1.setAttribute("style","display:block; margin-top:-25px;");
         homeskill1.setAttribute("style","display:none");
         homecertificate1.setAttribute("style","display:none");
@@ -277,14 +302,21 @@
       })
 
       skillbtn1.addEventListener("click",()=>{
-        homeskill1.setAttribute("style","display:block;margin-top:-25px");
+        homeskill1.setAttribute("style","display:block;margin-top:-25px;");
         console.log("skill");
+        skillbtn1.setAttribute("style","background-color:powderblue;");
+        projectbtn1.setAttribute("style","background-color:aqua;");
+        certificatebtn1.setAttribute("style","background-color:aqua");
+    
         homeproject1.setAttribute("style","display:none;")
         homecertificate1.setAttribute("style","display:none");
 
       });
 
       certificatebtn1.addEventListener("click",()=>{
+        skillbtn1.setAttribute("style","background-color:aqua;");
+        projectbtn1.setAttribute("style","background-color:aqua;");
+        certificatebtn1.setAttribute("style","background-color:powderblue");
         
         homeproject1.setAttribute("style","display:none");
         homeskill1.setAttribute("style","display:none");
