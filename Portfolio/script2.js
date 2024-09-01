@@ -19,7 +19,6 @@ function amazonwork(){
 }
 
 let pdfconverter1=document.getElementById("pdfconverter");
-let converterclose;
 pdfconverter1.addEventListener("click",pdfconverterwork);
 function pdfconverterwork(){
     console.log("clicked");
