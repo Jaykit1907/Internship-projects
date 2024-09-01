@@ -824,6 +824,7 @@ input[type]{
 
 #resumesection{
     position: relative;
+    display: none;
     right:25%;
 }
 .resumebtn{
