@@ -23,7 +23,7 @@ let converterclose;
 pdfconverter1.addEventListener("click",pdfconverterwork);
 function pdfconverterwork(){
     console.log("clicked");
-    converterclose=window.open("pdfconverter.html","video1","width=700 height=400 left=300 top=20 right=300");
+    window.open("pdfconverter.html","video1","width=700 height=400 left=300 top=20 right=300");
 
 }
 

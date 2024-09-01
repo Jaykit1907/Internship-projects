@@ -2,14 +2,17 @@
     padding:0;
     margin:0;
     box-sizing: border-box;
+    
 
 
-
+}
 #cross{
     display:none;
 }
-
+.homebtnshow{
+    display:flex;
 }
+
 .navbar{
     display:flex;
     align-items: center;
@@ -21,13 +24,14 @@
     width:100%;
 
 }
+
 .nav2 ul{
     display:flex;
     align-items: center;
     justify-content: center;
     height:60px;
     margin-right:80px;
-    
+        
 
 }
 .nav2 ul li a{
@@ -56,12 +60,30 @@
 #homecontact{
     display:none;
 }
+.resumebtn{
+    border:1px solid white;
+    background-color:transparent;
+    margin-left:20px;
+    color:white;
+    border-radius: 5px;
+    width:auto;
+    padding:10px;
+    cursor:pointer;
 
+}
+.resumebtn:hover{
+    transform: scale(1.1,1.1);
+}
+#resumesection{
+    display:none;
+}
 
 .logo{
     color:white;
     font-size:25px;
     margin-left:40px;
+    display:flex;
+    
 }
 
 .home-section{
@@ -795,6 +817,35 @@ input[type]{
     
     
 
+}
+#resumesection2{
+    display:none;
+}
+
+#resumesection{
+    position: relative;
+    right:25%;
+}
+.resumebtn{
+    color:white;
+    font-size:15px;
+    box-shadow: 0px 0px 2px white;
+}
+
+
+.detail h1{
+    color:white;
+    font-size:20px; 
+    height:auto;
+
+}
+.detail p{
+    color:aqua;
+    font-size:15px;
+    height:auto;
+}
+.container3 p{
+    padding:10px;
 }
 #element{
     font-size:20px;

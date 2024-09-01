@@ -14,14 +14,20 @@
      
         <div class="navbar">
             <div class="logo"><p>Portfolio</p>
+
                
             </div>
 
+            <div id="resumesection">
+                <a href="images/JAYKIT RESUME.pdf" download="Jaykit Resume"><button class="resumebtn"> Download Resume</button></a>
+                </div>
             <div class="nav2">
+                
                 <div class="menu2">
                 <i class="fa-solid fa-bars menuico" id="menuop"></i>
                 <i class="fa-solid fa-xmark menuico" id="cross"></i>
                 </div>
+                
                 <ul class="ulelement">
 
                     <li class="liele"><a href="index.html">Home</a></li>
@@ -47,7 +53,12 @@
                         <p>I'm a Full Stack Developer with strong foundation in web development,eager to contribute innovative solutions as a fresher. expertise is to create ad website design, Frontend design,and many more....
 
                         </p>
-                        <button class="moreaboutme"><a href="skills.html">More about me</a></button>
+                        <div class="homebtnshow">
+                        <button class="moreaboutme"><a href="about.html">More about me</a></button>
+                        <div id="resumesection2">
+                        <a href="images/JAYKIT RESUME.pdf" download="jaykit resume"><button class="moreaboutme">Download Resume</button></a>
+                        </div>
+                        </div>
                         <div class="icon1">
                         <a href="https://www.instagram.com/_jay_._19_07/"><i class="fa-brands fa-instagram icons2"></i></a>
                         <a href="https://www.facebook.com/jaykit.maurya?mibextid=ZbWKwL"><i class="fa-brands fa-facebook icons2"></i></a>
@@ -240,7 +251,7 @@
                     <input type="number" placeholder="phone number" class="text1">
                     </div>
                     <textarea placeholder="message" id="msg"></textarea>
-                    <button class="moreaboutme">Send Message</button>
+                    <button class="moreaboutme" id="contactbtn1">Send Message</button>
                 </form>
             </div>
         </div>
@@ -258,28 +269,6 @@
       });
 
 
-      let menu2=document.querySelector("#menuop");
-      let nav3=document.querySelector(".ulelement");
-      let cross1=document.querySelector("#cross");
-      let liele1=document.querySelectorAll(".liele");
-
-      menu2.addEventListener("click",menuwork);
-      function menuwork(){
-        console.log("working");
-        menu2.setAttribute("style","display:none;");
-        cross1.setAttribute("style","display:block");
-        nav3.setAttribute("style","display:flex; flex-direction:column;position:fixed;top:100px;");
-
-        
-      }
-      cross1.addEventListener("click",()=>{
-        menu2.setAttribute("style","display:block");
-        cross1.setAttribute("style","display:none");
-        nav3.setAttribute("style","display:none;");
-        liele1.setAttribute("style","height:30px;background-color:white;");
-      }
-      );
-        
 
       let projectbtn1=document.getElementById("projectbtn");
       let certificatebtn1=document.getElementById("certificatebtn");
@@ -324,6 +313,7 @@
 
       });
 
+   
     /* let menuico1=document.querySelector(".menuico");
       menuico1.addEventListener("click",()=>{
         alert("This button is pending to developer...");
