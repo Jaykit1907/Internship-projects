@@ -44,7 +44,7 @@
 
         <section>
             <div class="home-section">
-                <div class="container1">
+                <div class="container1 content2">
                         <h2>Hellow, It's me</h2>
                         <h1>Jaykit Maurya</h1>
                         <h2>
@@ -66,7 +66,7 @@
                         <a href="https://www.linkedin.com/in/jaykit-maurya-0ba361283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin icons2"></i></a>
                         </div>
                 </div>
-                <div class="photo">
+                <div class="photo content2">
                         <img src="images/photo3.jpg">
                 </div>
             </div>
@@ -85,31 +85,31 @@
             <div class="skill-heading">
             <h1 class="skill-heading">My Skills</h1>
             </div>
-            <div class="skill_container">
+            <div class="skill_container hidden1">
                 <h1>frontend</h1>
                 <div class="skill-images-container">
-                    <div class="skill-images">
+                    <div class="skill-images hidden">
                         <img src="images/html.png" alt="html">
                         <h1>html</h1>
                         <p></p>
                         <h3>90%</h3>
                     </div>
     
-                    <div class="skill-images">
+                    <div class="skill-images hidden">
                         <img src="images/css.png" alt="css">
                         <h1>css</h1>
                         <p></p>
                         <h3>80%</h3>
                     </div>
     
-                    <div class="skill-images">
+                    <div class="skill-images hidden">
                         <img src="images/javascript.png" alt="javascript">
                         <h1>javascript</h1>
                         <p></p>
                         <h3>70%</h3>
                     </div>
     
-                    <div class="skill-images">
+                    <div class="skill-images hidden">
                         <img src="images/reactjs.png" alt="reactjs">
                         <h1>reactjs</h1>
                         <p></p>
@@ -122,17 +122,17 @@
     
     
     
-            <div class="skill_container">
+            <div class="skill_container hidden1">
                 <h1>Backend</h1>
                 <div class="skill-images-container">
-                    <div class="skill-images">
+                    <div class="skill-images hidden">
                         <img src="images/django.png" alt="django">
                         <h1>django</h1>
                         <p></p>
                         <h3>80%</h3>
                     </div>
     
-                    <div class="skill-images">
+                    <div class="skill-images hidden">
                         <img src="images/mysql.png" alt="mysql">
                         <h1>mysql</h1>
                         <p></p>
@@ -153,25 +153,25 @@
         <div class="skill-heading">
         <h1 class="skill-heading">Certificates</h1>
         </div>
-        <div class="certificate_container">
+        <div class="certificate_container hidden1">
 
             <div class="certificate-images-container">
-                <div class="skill-images">
+                <div class="skill-images hidden">
                     <img src="images/python.jpg" alt="html">
                   
                 </div>
 
-                <div class="skill-images">
+                <div class="skill-images hidden">
                     <img src="images/microsoft ai.jpg" alt="css">
                    
                 </div>
 
-                <div class="skill-images">
+                <div class="skill-images hidden">
                     <img src="images/java programme.jpg" alt="javascript">
 
                 </div>
 
-                <div class="skill-images">
+                <div class="skill-images hidden">
                     <img src="images/javascript project.jpg" alt="reactjs">
 
                 </div>
@@ -186,13 +186,13 @@
 
 
         
-    <section id="homeproject">
+    <section id="homeproject" class="hidden">
         <div class="skill-heading">
-            <h1 class="skill-heading">Projects</h1>
+            <h1 class="skill-heading hidden">Projects</h1>
             </div>
         
         <div class="project-container">
-            <div class="project-container1 project-image">
+            <div class="project-container1 project-image hidden">
                 <img src="images/amazon.jpg">
                 <div class="project-info">
                 <h1>Amazon website clone</h1>
@@ -203,7 +203,7 @@
 
            
 
-            <div class="project-container1 project-image">
+            <div class="project-container1 project-image hidden">
                 <img src="images/netflix.jpg">
                 <div class="project-info">
                 <h1>Netflix website clone</h1>
@@ -212,7 +212,7 @@
             </div>
             </div>
 
-            <div class="project-container1 project-image">
+            <div class="project-container1 project-image hidden">
                 <img src="images/pdfconverter.jpg">
                 <div class="project-info">
                 <h1>Pdf converter</h1>
@@ -222,7 +222,7 @@
             </div>
 
 
-            <div class="project-container1 project-image">
+            <div class="project-container1 project-image hidden">
                 <img src="images/Translator.png">
                 <div class="project-info">
                 <h1>Multiple language translator</h1>
@@ -238,7 +238,7 @@
 
 
     <section id="homecontact">
-        <div class="contact-container">
+        <div class="contact-container hidden1">
             <h1>Contact Us</h1>
             <div class="form-container">
                 <form>
@@ -256,6 +256,10 @@
             </div>
         </div>
     </section>
+
+    <footer>
+        <p> &copy; 2024, All right reserved</p>
+    </footer>
 
 </body>
 
@@ -314,10 +318,10 @@
       });
 
    
-    /* let menuico1=document.querySelector(".menuico");
-      menuico1.addEventListener("click",()=>{
-        alert("This button is pending to developer...");
-      }) */
+      let contactbtnmsg=document.getElementById("contactbtn1");
+      contactbtnmsg.addEventListener("click",()=> alert("Sorry !! Message cann't send due to some reason.You can send message to jaykit on whatsapp 9653207317"));
+      
+        
 
 </script>
 <script src="script2.js"></script>

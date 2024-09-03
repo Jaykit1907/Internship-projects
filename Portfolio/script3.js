@@ -26,7 +26,64 @@
       );
         
 
-let contactbtnmsg=document.getElementById("contactbtn1");
-contactbtnmsg.addEventListener("click",()=> alert("Sorry !! Message cann't send due to some reason.You can send message to jaykit on whatsapp 9653207317"));
+
+document.addEventListener("scroll", function () {
+  const elements = document.querySelectorAll(".hidden");
 
   
+  const windowHeight = window.innerHeight;
+  
+  elements.forEach(element => {
+      const position = element.getBoundingClientRect().top;
+      
+      if (position < windowHeight - 100) {
+          element.classList.add("show");
+      }
+      else{
+        element.classList.remove("show");
+      }
+  }
+  
+
+);
+});
+
+
+document.addEventListener("scroll", function () {
+  const elements2 = document.querySelectorAll(".hidden1");
+
+  
+  const windowHeight = window.innerHeight;
+  
+  elements2.forEach(element => {
+      const position = element.getBoundingClientRect().top;
+      
+      if (position < windowHeight - 100) {
+          element.classList.add("show1");
+      }
+      else{
+        element.classList.remove("show1");
+      }
+  }
+  
+
+);
+});
+
+window.addEventListener("load", function () {
+  const elements = document.querySelectorAll(".content2");
+  
+  elements.forEach(element => {
+      element.classList.add("loaded");
+  });
+});
+
+window.addEventListener("load", function () {
+  const elements = document.querySelectorAll(".content3");
+  
+  elements.forEach(element => {
+      element.classList.add("loaded");
+  });
+});
+
+
