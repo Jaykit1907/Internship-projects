@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        input[type]{
+            width: 97%;
+            height:40px;
+            box-shadow: 2px 2px 5px black,1px 1px 4px black inset;
+            border-radius: 5px;
+            font-size:20px;
+            font-weight: 800;
+            padding-left: 5px;
+
+        }
+        #calculator{
+            border:1px solid black;
+            width:40%;
+            height:300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: gray;
+            flex-direction: column;
+            border-radius: 5px;
+            padding:10px;
+        }
+        table{
+        
+            
+            width:100%;
+            height:auto;
+            border-collapse:separate;
+        }
+        table tr{
+            width:80%;
+        }
+        table tr td{
+            border:1px solid black;
+            box-shadow: 2px 2px 5px black;
+            cursor: pointer;
+            padding:10px;
+            margin:10px;
+            text-align: center;
+            background-color: aquamarine;
+            font-size:larger;
+            font-weight: 600;
+            border-radius: 10px;
+
+        }
+        table tr td:hover{
+            background-color: rgb(76, 212, 212);
+
+        }
+    </style>
+</head>
+<body>
+   
+    <section id="calculator">
+        <input type="text">
+        <table>
+            <tr>
+                <td>C</td>
+                <td>%</td>
+                <td><=</td>
+                <td>/</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>*</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>+</td>
+            </tr>
+            <tr>
+                <td>00</td>
+                <td>0</td>
+                <td>.</td>
+                <td>=</td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>
