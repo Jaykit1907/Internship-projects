@@ -319,7 +319,10 @@
 
    
       let contactbtnmsg=document.getElementById("contactbtn1");
-      contactbtnmsg.addEventListener("click",()=> alert("Sorry !! Message cann't send due to some reason.You can send message to jaykit on whatsapp 9653207317"));
+      contactbtnmsg.addEventListener("click",(e)=> {
+        e.preventDefault();
+        return alert("Sorry !! Message cann't send due to some reason.You can send message to jaykit on whatsapp 9653207317");
+      });
       
         
 
