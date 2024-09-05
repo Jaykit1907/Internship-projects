@@ -936,6 +936,12 @@ input[type]{
     
     z-index:5;
 }
+.nav2 ul li {
+
+    background-color: rgb(15, 15, 41,0.9);
+    border-bottom: 1px solid aqua;
+    border-radius:2px;
+}
 
 
 .menu2{
