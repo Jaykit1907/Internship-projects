@@ -228,11 +228,12 @@ body::-webkit-scrollbar {
     border: none;
     font-size:13px;
     font-weight:700;
-    margin:30px 30px 7px 0px;
+    margin:30px 30px 7px 20px;
     box-shadow: 0px 0px 20px aqua;
    
     
 }
+
 .menu2{
     display:none;
 }
@@ -650,6 +651,13 @@ input[type]{
     box-shadow:0px 0px 4px aqua;
     border-radius:10px;
     margin:4px;
+}
+.detail3{
+    border:1px solid aqua;
+    border-radius: 5px;
+    padding:3px;
+    margin-bottom: 5px;
+    box-shadow:0px 0px 3px aqua;
 }
 .score1{
     color:aqua;
