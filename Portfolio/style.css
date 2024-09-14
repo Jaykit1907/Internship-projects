@@ -921,9 +921,14 @@ input[type]{
 
 }
 @media (max-width:650px){
+
+    
     
 .nav2 ul{
     display:none;
+   
+   
+    
 }
 .nav2{
     display:flex;
@@ -931,10 +936,14 @@ input[type]{
     justify-content: center;
     height:15px;
     flex-direction: column;
-     position:fixed;
-     right:10px;
+    position:fixed;
+    right:10px;
      
+     
+     
+
 }
+
 .navbar{
     display:flex;
     align-items: center;
