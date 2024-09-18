@@ -922,14 +922,11 @@ input[type]{
 }
 @media (max-width:650px){
 
-    
-    
 .nav2 ul{
-    display:none;
-   
-   
+   display: none;
     
 }
+
 .nav2{
     display:flex;
     align-items: center;
@@ -958,6 +955,9 @@ input[type]{
     background-color: rgb(15, 15, 41,0.9);
     border-bottom: 1px solid aqua;
     border-radius:2px;
+}
+.nav2 ul li a{
+    color:white;
 }
 
 
