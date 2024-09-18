@@ -5,6 +5,7 @@
       let cross1=document.querySelector("#cross");
      // let liele1=document.querySelectorAll(".liele");
       let resume=document.querySelector("#resumesection");
+    
 
       
       menu2.addEventListener("click",menuwork);
@@ -16,7 +17,8 @@
         console.log("working");
         menu2.setAttribute("style","display:none;");
         cross1.setAttribute("style","display:block");
-        nav3.setAttribute("style","display:flex; flex-direction:column;position:fixed;top:90px;");
+         nav3.setAttribute("style","display:flex; flex-direction:column;position:fixed;top:90px;");
+     
       
         
       }
@@ -25,7 +27,7 @@
         resume.setAttribute("style","display:none;");
         menu2.setAttribute("style","display:block");
         cross1.setAttribute("style","display:none");
-        nav3.setAttribute("style","display:none;");
+       nav3.setAttribute("style","display:none;");
         
       
 
@@ -92,33 +94,6 @@ window.addEventListener("load", function () {
   elements.forEach(element => {
       element.classList.add("loaded");
   });
-});
-
-
-
-let detail1=document.querySelector("#detailmore1");
-let photo1=document.querySelector(".photo2");
-let  displayinfo1=document.querySelector(".detailinfo");
-
-  detail1.addEventListener("click",()=>{
-  console.log("abc");
-
-    if (displayinfo1.style.display === 'none') {
-    
-      displayinfo1.style.display = 'flex';
-      detail1.innerHTML="Show less";    
-      photo1.setAttribute("style","margin-top:-500px;");
-      console.log("hellow world");
-  } 
-  else {
-    
-      displayinfo1.style.display = 'none';
-      photo1.setAttribute("style","margin-top:20px;");
-      detail1.innerHTML="Show more";
-  }
-
-
-
 });
 
 
