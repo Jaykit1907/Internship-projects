@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="scipt4.js"></script>
 </head>
-<body>
-   
-    <div class="navbar">
-        <div class="logo"><p>Portfolio</p>
 
-           
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <p>Portfolio</p>
+
+
         </div>
 
         <div id="resumesection">
-            <a href="images/JAYKIT RESUME.pdf" download="Jaykit Resume"><button class="resumebtn">Get Resume</button></a>
-            </div>
+            <a href="images/JAYKIT RESUME.pdf" download="Jaykit Resume"><button class="resumebtn">Get
+                    Resume</button></a>
+        </div>
         <div class="nav2">
-            
+
             <div class="menu2">
-            <i class="fa-solid fa-bars menuico" id="menuop"></i>
-            <i class="fa-solid fa-xmark menuico" id="cross"></i>
+                <i class="fa-solid fa-bars menuico" id="menuop"></i>
+                <i class="fa-solid fa-xmark menuico" id="cross"></i>
             </div>
-            
-            <ul class="ulelement">
 
-                <li class="liele"><a href="index.html">Home</a></li>
-                <li class="liele"><a href="about.html">About</a></li>
+            <ul class="ulelement navmenu">
 
-                <li class="liele"><a href="skills.html">Skills</a></li>
-                <li class="liele"><a href="project.html">Projects</a></li>
-                <li class="liele"><a href="contact.html">Contact</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+
+                <li class="nav-item"><a href="skills.html" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="project.html" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                 
             </ul>
         </div>
@@ -44,7 +51,7 @@
     <section>
         <div id="offlineMessage">You are currently offline!</div>
         <div class="skill-heading">
-        <h1 class="skill-heading">My Skills</h1>
+            <h1 class="skill-heading">My Skills</h1>
         </div>
         <div class="skill_container content2">
             <h1>frontend</h1>
@@ -77,8 +84,8 @@
                     <h3>70%</h3>
                 </div>
             </div>
-          
-            
+
+
         </div>
 
 
@@ -100,16 +107,40 @@
                     <h3>80%</h3>
                 </div>
 
-               
+
             </div>
-          
-            
+
+
+        </div>
+        
+        <div class="skill_container content2">
+            <h1>Tools/Version Control</h1>
+            <div class="skill-images-container">
+                <div class="skill-images">
+                    <img src="images/gitimg.png" alt="git">
+                    <h1>Git</h1>
+                    <p></p>
+                    <h3>80%</h3>
+                </div>
+
+                <div class="skill-images">
+                    <img src="images/githubimg.png" alt="github">
+                    <h1>Github</h1>
+                    <p></p>
+                    <h3>80%</h3>
+                </div>
+
+
+            </div>
+
+
         </div>
     </section>
 
-    
+
 
 </body>
 <script src="script3.js"></script>
 <script src="script4.js"></script>
+
 </html>
