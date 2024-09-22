@@ -17,7 +17,7 @@
         console.log("working");
         menu2.setAttribute("style","display:none;");
         cross1.setAttribute("style","display:block");
-         nav3.setAttribute("style","display:flex; flex-direction:column;position:fixed;top:90px;");
+         nav3.setAttribute("style","display:flex; flex-direction:column;position:fixed;top:112px;");
      
       
         

@@ -711,23 +711,22 @@ input[type]{
 
 @media (max-width:450px){
 
-    .nav2 ul li{
-        
-    background-color: rgb(15, 15, 41,0.8);
-    padding:2px;
-    border-bottom:1px solid rgb(137, 212, 212);
-
-        
+    .nav2 ul li a{
+        color:white;
+        height: auto;
+        padding:5px;
     }
-    .nav2 ul li:hover{
+    
+    /* .nav2 ul li:hover{
         border-bottom: 2px solid rgb(137, 212, 212);
         padding:5px;
 
-    }
+    } */
     .nav2 ul li a{
     
         font-weight: 500;
     }
+
 
 .nav2 ul{
         display:none;
@@ -966,6 +965,18 @@ input[type]{
     
 
 }
+
+@media (max-width:1200px){
+    
+        
+footer{
+
+    position:relative;
+    bottom:0px;
+    
+
+    }
+}
 @media (max-width:650px){
 
 .nav2 ul{
@@ -981,6 +992,7 @@ input[type]{
     flex-direction: column;
     position:fixed;
     right:10px;
+    
      
      
      
@@ -999,11 +1011,14 @@ input[type]{
 .nav2 ul li {
 
     background-color: rgb(15, 15, 41,0.9);
-    border-bottom: 1px solid aqua;
     border-radius:2px;
+    height: auto;
+
 }
 .nav2 ul li a{
     color:white;
+    height: auto;
+    padding:5px;
 }
 
 
