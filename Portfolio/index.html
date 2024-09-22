@@ -28,14 +28,14 @@
                 <i class="fa-solid fa-xmark menuico menu-button" id="cross"></i>
                 </div>
                 
-                <ul class="ulelement">
+                <ul class="ulelement navmenu">
 
-                    <li class="liele"><a href="index.html">Home</a></li>
-                    <li class="liele"><a href="about.html">About</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
 
-                    <li class="liele"><a href="skills.html">Skills</a></li>
-                    <li class="liele"><a href="project.html">Projects</a></li>
-                    <li class="liele"><a href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a href="skills.html" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="project.html" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                     
                 </ul>
             </div>
@@ -146,6 +146,28 @@
               
                 
             </div>
+            <div class="skill_container hidden1">
+                <h1>Tools/Version Control</h1>
+                <div class="skill-images-container">
+                    <div class="skill-images hidden">
+                        <img src="images/gitimg.png" alt="git">
+                        <h1>Git</h1>
+                        <p></p>
+                        <h3>80%</h3>
+                    </div>
+    
+                    <div class="skill-images hidden">
+                        <img src="images/githubimg.png" alt="github">
+                        <h1>Github</h1>
+                        <p></p>
+                        <h3>80%</h3>
+                    </div>
+    
+                   
+                </div>
+              
+                
+            </div>
         </section>
 
 
@@ -245,14 +267,14 @@
             <div class="form-container">
                 <form>
                     <div class="form1">
-                    <input type="text" placeholder="First name" class="text1">
-                    <input type="text" placeholder="Last name" class="text1">
+                    <input type="text" placeholder="First name" class="text1" required>
+                    <input type="text" placeholder="Last name" class="text1"    required>
                     </div>
                     <div class="form1">
-                    <input type="email" placeholder="email add" class="text1">
-                    <input type="number" placeholder="phone number" class="text1">
+                    <input type="email" placeholder="email add" class="text1" required>
+                    <input type="number" placeholder="phone number" class="text1" required>
                     </div>
-                    <textarea placeholder="message" id="msg"></textarea>
+                    <textarea placeholder="message" id="msg" required></textarea>
                     <button class="moreaboutme" id="contactbtn1">Send Message</button>
                 </form>
             </div>
@@ -330,6 +352,7 @@
       
 
         
+
 
 </script>
 
