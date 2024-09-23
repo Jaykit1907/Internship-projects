@@ -557,6 +557,7 @@ input[type]{
     display:flex;
     font-size:40px;
     align-items: flex-start;
+    text-align: center;
 }
 .skill-images{
     display:flex;
