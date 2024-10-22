@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script3.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <style>
+        p{
+            white-space: pre-wrap;
+        }
+    </style>
+
+
+  </head>
+  <body>
+    
+    <div class="navbar">
+      <div class="logo"><p>Portfolio</p>
+
+         
+      </div>
+
+      <div id="resumesection">
+          <a href="images/JAYKIT RESUME.pdf" download="Jaykit Resume"><button class="resumebtn">Get Resume</button></a>
+          </div>
+      <div class="nav2">
+          
+          <div class="menu2">
+          <i class="fa-solid fa-bars menuico menu-button" id="menuop" ></i>
+          <i class="fa-solid fa-xmark menuico menu-button" id="cross"></i>
+          </div>
+          
+          <ul class="ulelement navmenu">
+
+              <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+
+              <li class="nav-item"><a href="skills.html" class="nav-link">Skills</a></li>
+              <li class="nav-item"><a href="project.html" class="nav-link">Projects</a></li>
+              <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+              <li class="nav-item"><a href="code.html" class="nav-link">Contact</a></li>
+
+              
+          </ul>
+      </div>
+  </div>
+  
+
+
+    <section>
+     
+        
+        <div class="container3 content3">
+          <h1>About me</h1>
+          <h2><span id="element"></span></h2>
+       
+          <div class="detailinfo" style="display:none;">
+            <h1>Education Details</h1>
+            <div class="detail1">
+              <h1>cisear cipher</h1>
+              <p>#A python program to illustrate Caesar Cipher Technique
+                def encrypt(text,s):
+                    result = ""
+                
+                    # traverse text
+                    for i in range(len(text)):
+                        char = text[i]
+                
+                        # Encrypt uppercase characters
+                        if (char.isupper()):
+                            result += chr((ord(char) + s-65) % 26 + 65)
+                
+                        # Encrypt lowercase characters
+                        else:
+                            result += chr((ord(char) + s - 97) % 26 + 97)
+                
+                    return result
+                
+                #check the above function
+                text = "ATTACKATONCE"
+                s = 4
+                print ("Text  : " + text)
+                print ("Shift : " + str(s))
+                print ("Cipher: " + encrypt(text,s))</p>
+
+            </div>
+
+            <div class="detail1 hidden">
+              <h1>playfair</h1>
+             <p># Helper function to format the message
+                def format_message(message):
+                    message = message.upper().replace("J", "I").replace(" ", "")
+                    formatted_message = ""
+                    i = 0
+                    while i < len(message):
+                        formatted_message += message[i]
+                        if i + 1 < len(message) and message[i] == message[i + 1]:
+                            formatted_message += 'X'  # Insert X between repeating letters
+                        elif i + 1 < len(message):
+                            formatted_message += message[i + 1]
+                        i += 2
+                    if len(formatted_message) % 2 != 0:
+                        formatted_message += 'X'  # Add an extra X if the message length is odd
+                    return formatted_message
+                
+                # Helper function to generate the Playfair cipher key matrix
+                def generate_key_matrix(key):
+                    key = key.upper().replace("J", "I")  # Replace J with I
+                    matrix = []
+                    used_letters = set()
+                    for letter in key:
+                        if letter not in used_letters and letter.isalpha():
+                            matrix.append(letter)
+                            used_letters.add(letter)
+                
+                    for letter in "ABCDEFGHIKLMNOPQRSTUVWXYZ":  # Alphabet without J
+                        if letter not in used_letters:
+                            matrix.append(letter)
+                
+                    return [matrix[i:i + 5] for i in range(0, 25, 5)]  # 5x5 matrix
+                
+                # Helper function to find position of a letter in the key matrix
+                def find_position(letter, key_matrix):
+                    for row in range(5):
+                        for col in range(5):
+                            if key_matrix[row][col] == letter:
+                                return row, col
+                    return None
+                
+                # Encrypt a pair of characters
+                def encrypt_pair(pair, key_matrix):
+                    row1, col1 = find_position(pair[0], key_matrix)
+                    row2, col2 = find_position(pair[1], key_matrix)
+                
+                    if row1 == row2:  # Same row
+                        return key_matrix[row1][(col1 + 1) % 5] + key_matrix[row2][(col2 + 1) % 5]
+                    elif col1 == col2:  # Same column
+                        return key_matrix[(row1 + 1) % 5][col1] + key_matrix[(row2 + 1) % 5][col2]
+                    else:  # Rectangle
+                        return key_matrix[row1][col2] + key_matrix[row2][col1]
+                
+                # Decrypt a pair of characters
+                def decrypt_pair(pair, key_matrix):
+                    row1, col1 = find_position(pair[0], key_matrix)
+                    row2, col2 = find_position(pair[1], key_matrix)
+                
+                    if row1 == row2:  # Same row
+                        return key_matrix[row1][(col1 - 1) % 5] + key_matrix[row2][(col2 - 1) % 5]
+                    elif col1 == col2:  # Same column
+                        return key_matrix[(row1 - 1) % 5][col1] + key_matrix[(row2 - 1) % 5][col2]
+                    else:  # Rectangle
+                        return key_matrix[row1][col2] + key_matrix[row2][col1]
+                
+                # Function to encrypt or decrypt a message using the Playfair cipher
+                def playfair_cipher(message, key, mode):
+                    key_matrix = generate_key_matrix(key)
+                    formatted_message = format_message(message)
+                
+                    result = ""
+                    for i in range(0, len(formatted_message), 2):
+                        pair = formatted_message[i:i + 2]
+                        if mode == 'encrypt':
+                            result += encrypt_pair(pair, key_matrix)
+                        elif mode == 'decrypt':
+                            result += decrypt_pair(pair, key_matrix)
+                
+                    return result
+                
+                # Main function to take user input and perform encryption or decryption
+                def main():
+                    print("Playfair Cipher")
+                    key = input("Enter the keyword: ").strip()
+                    message = input("Enter the message: ").strip()
+                    mode = input("Would you like to encrypt or decrypt? (enter 'encrypt' or 'decrypt'): ").strip().lower()
+                
+                    if mode not in ['encrypt', 'decrypt']:
+                        print("Invalid mode! Please enter 'encrypt' or 'decrypt'.")
+                        return
+                
+                    result = playfair_cipher(message, key, mode)
+                    print(f"The result is: {result}")
+                
+                # Run the program
+                if __name__ == "__main__":
+                    main()
+                </p>
+             
+            </div>
+            <div class="detail1 hidden">
+                <h1>Des</h1>
+               <p>from Crypto.Cipher import DES
+                from Crypto.Util.Padding import pad, unpad
+                from Crypto.Random import get_random_bytes
+                
+                # Function to encrypt data using DES
+                def des_encrypt(plaintext, key):
+                    # Create a DES cipher object
+                    cipher = DES.new(key, DES.MODE_ECB)
+                    # Pad the plaintext to be a multiple of 8 bytes (block size for DES)
+                    padded_text = pad(plaintext.encode('utf-8'), DES.block_size)
+                
+                    # Encrypt the padded plaintext
+                    ciphertext = cipher.encrypt(padded_text)
+                
+                    return ciphertext
+                # Function to decrypt data using DES
+                def des_decrypt(ciphertext, key):
+                    # Create a DES cipher object
+                    cipher = DES.new(key, DES.MODE_ECB)
+                
+                    # Decrypt the ciphertext
+                    decrypted_padded_text = cipher.decrypt(ciphertext)
+                
+                    # Unpad the decrypted plaintext to get the original message
+                    plaintext = unpad(decrypted_padded_text, DES.block_size).decode('utf-8')
+                
+                    return plaintext
+                
+                # Example usage
+                if _name_ == "_main_":
+                    try:
+                        # 8-byte key for DES (64 bits, but only 56 bits are used, 8 bits are for parity)
+                        key = get_random_bytes(8)
+                
+                        # Plaintext message
+                        plaintext = "Hello, World!"
+                
+                        # Encrypt the plaintext
+                        ciphertext = des_encrypt(plaintext, key)
+                        print(f"Ciphertext: {ciphertext.hex()}")
+                
+                        # Decrypt the ciphertext
+                        decrypted_text = des_decrypt(ciphertext, key)
+                        print(f"Decrypted text: {decrypted_text}")
+                    except Exception as e:
+                        print(f"An error occurred: {e}")
+                  </p>
+               
+              </div>
+
+            <div class="detail1 hidden">
+              <h1>brute</h1>
+              
+              <p># Function to encrypt the text using Caesar Cipher
+                def caesar_encrypt(plain_text, shift):
+                    encrypted_text = ""
+                    for char in plain_text:
+                        if char.isalpha():
+                            shift_amount = shift % 26
+                            char_code = ord(char) + shift_amount
+                            if char.islower():
+                                if char_code > ord('z'):
+                                    char_code -= 26
+                                encrypted_text += chr(char_code)
+                            elif char.isupper():
+                                if char_code > ord('Z'):
+                                    char_code -= 26
+                                encrypted_text += chr(char_code)
+                        else:
+                            encrypted_text += char
+                    return encrypted_text
+                
+                # Function to decrypt the text using Caesar Cipher with a given shift
+                def caesar_decrypt(cipher_text, shift):
+                    decrypted_text = ""
+                    for char in cipher_text:
+                        if char.isalpha():
+                            shift_amount = shift % 26
+                            char_code = ord(char) - shift_amount
+                            if char.islower():
+                                if char_code < ord('a'):
+                                    char_code += 26
+                                decrypted_text += chr(char_code)
+                            elif char.isupper():
+                                if char_code < ord('A'):
+                                    char_code += 26
+                                decrypted_text += chr(char_code)
+                        else:
+                            decrypted_text += char
+                    return decrypted_text
+                
+                # Function to perform brute-force cryptanalysis on Caesar Cipher
+                def brute_force_caesar(cipher_text):
+                    possible_plaintexts = []
+                    for shift in range(1, 26):
+                        decrypted_text = caesar_decrypt(cipher_text, shift)
+                        possible_plaintexts.append((shift, decrypted_text))
+                    
+                    # Print out each possible decryption
+                    for shift, text in possible_plaintexts:
+                        print(f"Shift {shift}: {text}")
+                        
+                    return possible_plaintexts
+                
+                
+                def main():
+                
+                    cipher_text = "Khoor Zruog!"
+                    
+                    print("Attempting brute-force decryption:")
+                    brute_force_caesar(cipher_text)
+                
+                if __name__ == "__main__":
+                    main()
+                </p>
+            
+            
+
+              </div>
+
+              
+                <a href="images/SL.pdf" download="SL"><button class="moreaboutme">Download Resume</button></a>
+                
+            </div>
+          </div>
+
+
+          
+
+
+            
+
+
+      
+        
+          <button class="moreaboutme" id="detailmore1">
+            <a href="##">Show more</a>
+          </button>
+        </div>
+        
+      </div>
+    </section>
+    <script src="script4.js"></script>
+    
+  </body>
+  <script>
+    var typed = new Typed("#element", {
+      strings: ["<u>Full Stack Developer!</u>"],
+      typeSpeed: 50,
+      typeReversed: 160,
+      typeDelay: 1000,
+
+      loop: true,
+    });
+
+    
+let detail1=document.querySelector("#detailmore1");
+let photo1=document.querySelector(".photo2");
+let  displayinfo1=document.querySelector(".detailinfo");
+
+detail1.addEventListener("click", () => {
+    // Prompt the user to enter a password
+    const enteredPassword = prompt("Please enter your password:");
+  
+    // Define the correct password (you can change it as needed)
+    const correctPassword = "12345"; // Replace with the actual password
+  
+    // Check if the entered password matches the correct one
+    if (enteredPassword === correctPassword) {
+      console.log("Password correct!");
+  
+      // Now perform the display logic
+      if (displayinfo1.style.display === 'none') {
+        displayinfo1.style.display = 'flex';
+        detail1.innerHTML = "Show less";
+        photo1.setAttribute("style", "margin-top:-500px;");
+        console.log("hello world");
+      } else {
+        displayinfo1.style.display = 'none';
+        photo1.setAttribute("style", "margin-top:20px;");
+        detail1.innerHTML = "Show more";
+      }
+    } else {
+      // If the password is incorrect
+      alert("Incorrect password, access denied.");
+    }
+  });
+  
+
+
+
+  </script>
+  <script src="script4.js"></script>
+
+
+</html>
