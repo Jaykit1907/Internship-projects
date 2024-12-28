@@ -27,6 +27,15 @@ function pdfconverterwork(){
 }
 
 
+let generativeai1=document.getElementById("generative");
+
+generativeai1.addEventListener("click",generativework);
+function generativework(){
+    console.log("clicked");
+    window.open("Generative.html","video1","width=700 height=400 left=300 top=20 right=300");
+
+}
+
 
 let translator1=document.getElementById("translator");
 
@@ -36,5 +45,6 @@ function translatorwork(){
     window.open("Translator.html","video1","width=700 height=400 left=300 top=20 right=300");
 
 }
+
 
 
