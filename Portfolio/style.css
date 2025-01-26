@@ -972,7 +972,7 @@ input[type]{
         
 footer{
 
-    position:relative;
+    position:fixed;
     bottom:0px;
     
 
@@ -1405,4 +1405,125 @@ margin-left:-20px;
         }
     
     
+}
+
+
+@media screen  and (min-width:1200px){
+
+    .photo img{
+        height:470px;
+        width:450px;
+    
+    }
+    .photo2 img{
+        height:470px;
+        width:450px;
+
+    }
+    .photo{
+        margin-top:150px;
+    }
+    .container1{
+        margin-top:120px;
+        margin-left:140px;
+    }
+    .container1 h2{
+        font-size:45px;
+    }
+    .container1 h1{
+        font-size:75px;
+    }
+    .container1 p{
+        font-size:23px;
+    }
+    .navbar{
+        height:90px;
+    }
+    .nav2 ul li a{
+        font-size:28px;
+        padding:15px;
+    }
+    .moreaboutme{
+        height:60px;
+        width:145px;
+        font-size:20px;
+        padding:10px;
+        font-weight: 720;
+    }
+    p{
+        font-size:30px;
+    }
+    footer{
+        height:75px;
+    }
+    .icons2{
+        font-size:45px;
+            
+    }
+    .icons2:hover{
+        font-size:47px;
+    }
+    .education h1{
+        font-size:23px;
+
+    }
+    .container3 p{
+        font-size:23px;
+    }
+    .container3 h1{
+        font-size:55px;
+    }
+    .container3 h2{
+        font-size:35px;
+    }
+    .skill-heading {
+        padding-top:50px;
+        font-size:80px;
+    }
+    .skill_container{
+        height:380px;
+    }
+    .skill_container h1{
+        font-size:40px;
+    }
+    .skill-images img{
+        height:170px;
+        width:170px;
+
+    }
+    .skill-images-container{
+        box-shadow: 0px 0px 8px aqua;
+    }
+   
+    .project-image img{
+        width:30%;
+        object-fit:fill;
+        height:auto;
+        padding:10px;
+    
+       
+    }
+    .project-info p{
+        width:80%;
+    }
+    .project-info h1{
+        font-size:30px;
+    }
+     form{
+        height:550px;
+        margin-top:50px;
+
+    }
+    input[type]{
+        font-size:20px;
+        height:60px;
+        width:85%;
+
+    }
+    .contact-container h1{
+        font-size:80px;
+    }
+    #msg{
+        font-size:20px;
+    }
 }
